@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.625;
+  background: #000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --nav-bg-color: #35424a;
+  --ft-bg-color: #e8491d;
+}
+
+
+
+h1,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+.active {
+  color: var(--ft-bg-color);
+}
+
+/* ?? NAVBAR */
+.container {
+
+  margin: 0 auto;
+}
+
+.container__in {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.container nav {
+  background: var(--nav-bg-color);
+  color: white;
+  border-bottom: 2px solid var(--ft-bg-color);
+  padding: 24px 0;
+}
+
+.container .nav__logo p {
+  font-size: 32px;
+}
+
+.container .nav__logo .nav__logo__span {
+  color: var(--ft-bg-color);
+}
+
+.container .nav__items {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ??  Subscribe Bar */
+.subscribe {
+  background: var(--nav-bg-color);
+  color: white;
+  padding: 10px 0;
+}
+
+.subscribe input[type=text] {
+  font-size: 12px;
+  padding: 10px;
+  width: 250Px;
+}
+
+.subscribe a {
+  font-size: 12px;
+  background: var(--ft-bg-color);
+  padding: 12px 20px;
+}
+
+/* ??  FOOTER Bar */
+footer {
+  background: var(--ft-bg-color);
+  color: white;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+
+  section .section__part1,
+  section .section__part2,
+  section article,
+  .nav__logo,
+  .nav__items {
+    text-align: center;
+    margin: 0px auto;
+  }
+}
