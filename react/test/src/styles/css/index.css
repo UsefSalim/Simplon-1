@@ -1,5 +1,5 @@
 /* ?? HEADER */
-header {
+/* header {
   color: white;
   height: 400px;
   background: url('../images/coding-man.jpg');
@@ -7,7 +7,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 
-}
+} */
 
 header .container__in {
   height: 400px;
@@ -24,21 +24,21 @@ header h1 {
 
 /* ?? section 1 */
 
-section {
+.section_I {
   background: white;
   padding: 20px 0;
 }
 
-section .section__article {
+.section_I .section__article {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-section article {
+.section_I article {
   max-width: 280px;
 }
 
-section img {
+.section_I img {
   width: 130px;
 }

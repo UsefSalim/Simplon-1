@@ -1,18 +1,18 @@
-section {
+.section_A {
   background: white;
   padding-bottom: 30px;
 }
 
-section .container__in {
+.section_A .container__in {
   align-items: start;
 }
 
-.section__part1 {
+.section_A .section__part1 {
   max-width: 550px;
 }
 
-.section__part1 h3,
-.section__part2 h3 {
+.section_A .section__part1 h3,
+.section_A .section__part2 h3 {
   padding: 20px 0;
   font-size: 24px;
 
@@ -20,20 +20,19 @@ section .container__in {
 
 .section__part2 h3 {}
 
-.section__part1 p {
+.section_A .section__part1 p {
   margin: 20px 0;
 }
 
-.section__part1 p:nth-child(3),
-.section__part2 {
+.section_A .section__part1 p:nth-child(3),
+.section_A .section__part2 {
   background: var(--nav-bg-color);
   padding: 20px 15px;
   color: white;
 }
 
 
-.section__part2 {
+.section_A .section__part2 {
   margin-top: 50px;
   max-width: 350px;
 }
-
