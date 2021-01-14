@@ -5,7 +5,7 @@ import Background from '../../images/coding-man.jpg';
 var sectionStyle = {
   color: "white",
   height: "400px",
-  backgroundImage: "url(" + { Background } + ")",
+  backgroundImage: `url(${Background})`,
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover"

@@ -17,13 +17,12 @@ const Form = () => {
   );
 };
 
-const Article = () => {
+const Article = ({ title, children, pricing }) => {
   return (
     <article>
-      <h4>Web DesignE</h4>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi facere, consequuntur dolorum porro
-            </p>
-      <p>Pricing $11100- 3000$</p>
+      <h4>{title}</h4>
+      <p>{children}</p>
+      <p>Pricing  {pricing}</p>
     </article>
   );
 };
@@ -33,9 +32,9 @@ const Section = () => {
       <div className="container__in">
         <div className="section__part1">
           <h3>Services</h3>
-          <Article></Article>
-          <Article></Article>
-          <Article></Article>
+          <Article title="title1" pricing="$20000- 3000$">Article 1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, ducimus?</Article>
+          <Article title="title2" pricing="$11000- 3000$">Article 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, ducimus?</Article>
+          <Article title="title3" pricing="$343232- 3000$">Article 3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, ducimus?</Article>
         </div>
         <Form />
       </div>
